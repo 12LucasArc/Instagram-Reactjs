@@ -56,3 +56,20 @@
     width: 55px;
     height: 30px;
 }
+
+
+.logoutBtn {
+    background-color: #262626;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2 ease;
+}
+
+.logoutBtn:hover {
+    background-color: #3a3a3a;
+    
+}

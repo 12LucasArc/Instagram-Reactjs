@@ -1,4 +1,7 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { signOut } from 'firebase/auth';
+import { auth } from '../../firebase';
 import './RightSidebar.css';
 import user1 from '/src/assets/users/user1.jpg';
 import user2 from '/src/assets/users/user2.jpg';
@@ -11,6 +14,17 @@ const suggestions = [
 ];
 
 const RightSidebar = () => {
+  const navigate = useNavigate(); 
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate('/');
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
+  };
+
   return (
     <div className="rightSidebar">
       <h3>Suggested for you</h3>
@@ -24,6 +38,9 @@ const RightSidebar = () => {
           <button className="followBtn">Follow</button>
         </div>
       ))}
+      <button onClick={handleLogout} className="logoutBtn">
+        Log out
+      </button>
     </div>
   );
 };

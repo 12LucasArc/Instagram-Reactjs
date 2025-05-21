@@ -63,3 +63,9 @@ form button:hover {
   cursor: pointer;
   margin-left: 5px;
 }
+
+.errorMsg {
+    color: #ff4d4d;
+    margin: 10px 0;
+    font-size: 14px;
+}
