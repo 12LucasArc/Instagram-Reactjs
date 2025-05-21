@@ -1,0 +1,58 @@
+.rightSideBar{
+    width: 300px;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.rightSideBar h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.suggestion{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.suggestionImg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.suggestionText{
+    flex-grow: 1;
+}
+
+.username{
+    font-weight: bold;
+    color: #fff;
+}
+
+.fullname{
+    font-size: 12px;
+    color: #aaa;
+}
+
+.followBtn{
+    background: transparent;
+    border: none;
+    color: #0095f6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.followBtn:hover{
+    border-radius: 15px;
+    background-color: #9cceef;
+    width: 55px;
+    height: 30px;
+}
